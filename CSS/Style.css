@@ -105,11 +105,17 @@ button{
     viewBox: 0 0 20 20
 }
 .container_box{
-    max-width: 1211px;
+    max-width: 1200px;
     margin: auto;
 }
 header{
     padding-top: 31px;
+}
+header .container_box{
+    border-bottom: 0.30px solid #f5f5f5;
+}
+main{
+    margin-top: 14px;
 }
 header nav, header nav li, header .logo{
     display: inline-block;
@@ -123,32 +129,24 @@ header nav li a{
     font-size: 16px;
     color: #3d3d3d;
 }
-header .logo{
+header .logo {
     margin-right: 229px;
     width: 150px;
     height: 35px;
     viewBox: 0 0 150 35
 }
 header .login{
-    margin-left: 370px;
+    margin-left: 380px;
     border: 1px solid #eaeaea;
     border-radius: 6px;
-    width: 100px;
     height: 35px;
     background: #46a358;
     text-decoration: none;
+    text-align: center;
     font-weight: 500;
     font-size: 16px;
     color: #fff;
     padding: 8px 17px;
-}
-.login img:before{
-    margin-right: 4px;
-    width: 20px;
-    height: 20px;
-    viewBox: 0 0 20 20;
-    content: "";
-    display: block;
 }
 header nav li{
     margin-right: 50px;
@@ -213,7 +211,6 @@ header nav li:hover:after{
 }
 .banner a{
     border-radius: 6px;
-    width: 140px;
     height: 40px;
     background: #46a358;
     text-decoration: none;
@@ -223,6 +220,10 @@ header nav li:hover:after{
     text-transform: uppercase;
     color: #fff;
     padding: 10px 26px;
+}
+.banner img {
+    width: 507px;
+    height: 450px;
 }
 
 
