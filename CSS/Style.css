@@ -58,7 +58,7 @@
     margin-bottom:  40px;
     font-family: 'cera_promedium';
 }
-span:first-of-type{
+#box_model span:first-of-type{
     border-right: black solid 1px;
     padding: 12px;
     margin: 10px;
@@ -67,7 +67,7 @@ span:first-of-type{
     line-height: 80%;
     color: #3d3d3d;
 }
-span:last-of-type{
+#box_model span:last-of-type{
     font-weight: 500;
     font-size: 20px;
     line-height: 80%;
@@ -262,7 +262,7 @@ header nav li:hover:after{
     color: #3d3d3d;
     font-family: 'cera_problack';
 }
-.banner span{
+.banner .slogan{
     font-weight: 900;
     font-size: 70px;
     line-height: 100%;
