@@ -205,13 +205,14 @@ header .login{
     display: flex;
     justify-content: center;
     align-items: center
-
 }
 header .login:before{
     content: "";
     display: inline-block;
     height: 20px;
-    background-image: url("images/logout.svg");
+    width: 20px;
+    background-image: url("../images/logout.svg");
+    margin-right: 4px;
 }
 header nav li{
     margin-right: 50px;
@@ -228,7 +229,7 @@ header nav li:after {
     margin-top: 22px;
     transition: 0.3s;
 }
-header nav li:hover:after{
+header nav li:hover:after {
     background-color: #46a358;
 }
 .banner .container_box{
@@ -295,6 +296,7 @@ header nav li:hover:after{
     justify-content: space-between;
     flex-wrap: wrap;
     margin-top: 26px;
+    align-items: flex-start;
 }
 .categories .left_sidebar{
     max-width: 310px;
@@ -338,18 +340,70 @@ header nav li:hover:after{
     list-style: none;
     display: flex;
     justify-content: space-between;
-
+}
+.right_content .flex_1 li{
+    margin-right: 40px;
 }
 .right_content .flex_1 li a {
     font-size: 15px;
     line-height: 107%;
     color: #3d3d3d;
     text-decoration: none;
-    margin-right: 40px;
+}
+.right_content .flex_1 li a:after {
+    height: 2px;
+    background-color: transparent;
+    width: 100%;
+    content: "";
+    display: block;
+    margin-top: 7px;
+    transition: 0.3s;
+}
+.right_content .flex_1 li a:hover:after{
+    background-color: #46a358;
+}
+.right_content .flex_1 li a:hover{
+    color: #46a358;
+    transition: 0.3s;
 }
 .categories .right_content article{
     width: 258px;
-    margin-bottom: 70px;
+    margin-bottom: 65px;
+    border-top: solid 1px transparent;
+    position: relative;
+}
+.categories .right_content article ul{
+    list-style: none;
+    display: flex;
+    position: absolute;
+    bottom: 64px;
+    left: calc(50% - 62px);
+    opacity: 0;
+    transition: 0.4s;
+}
+.categories .right_content article:hover ul{
+    opacity: 1;
+}
+.categories .right_content article ul li a:hover svg path{
+    fill: #46a358!important;
+}
+.categories .right_content article ul li:nth-child(2){
+    margin-left: 27px;
+    margin-right: 27px;
+}
+.categories .right_content article:hover{
+    border-top: solid 1px #46a358;
+}
+.categories .right_content article .sale{
+    position: absolute;
+    left: 0;
+    top: 14px;
+    background-color: #46a358;
+    padding: 8px;
+    font-size: 16px;
+    line-height: 100%;
+    color: #fff;
+    font-family: 'cera_promedium';
 }
 .right_content .flex_2{
     display: flex;
@@ -370,6 +424,25 @@ header nav li:hover:after{
     line-height: 89%;
     color: #46a358;
     font-family: 'cera_probold';
+}
+.categories .right_content article p span{
+    font-size: 18px;
+    line-height: 89%;
+    color: #a5a5a5;
+    font-family: 'cera_proregular';
+    display: inline-block;
+    margin-left: 16px;
+    position: relative;
+}
+.categories .right_content article p span:after{
+    content: "";
+    display: block;
+    position: absolute;
+    height: 1px;
+    background-color: #cbcbcb;
+    width: 100%;
+    top: 8.5px;
+    left: 0px;
 }
 .categories .right_content .pagination{
     display: flex;
@@ -398,3 +471,41 @@ header nav li:hover:after{
     line-height: 89%;
     color: #3d3d3d;
 }
+.categories .right_content .pagination{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+    margin-bottom: 80px;
+}
+.categories .right_content .pagination ul{
+    display: flex;
+    justify-content: space-between;
+}
+.categories .right_content .pagination ul li{
+    list-style: none;
+    margin-left: 10px;
+    border-radius: 4px;
+    width: 35px;
+    height: 35px;
+    overflow: hidden;
+}
+.pagination a{
+    border: 1px solid #e5e5e5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 89%;
+    color: #3d3d3d;
+}
+.categories .pagination ul li:last-of-type:hover a svg path{
+    stroke: white!important;
+}
+.categories .pagination ul li:hover{
+    background-color: #46a358;
+}
+.categories .pagination ul li:hover a{
+    color: white;
+}
+
